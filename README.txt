@@ -67,3 +67,8 @@ More Math / Logic (4)
 Notes
 
 TT1/TT2/TT3 = TT(layer) (tap TAPPING_TOGGLE times to toggle; hold for momentary). Your config sets TAPPING_TOGGLE 3 → triple-tap to toggle. 
+Base thumbs: TT1 → layer 1; on layer 1 row3 left: TT2 → layer 2; TT3 → layer 3. 
+MO4 = MO(4) momentarily activates layer 4 while held.
+Macro0 (QK_MACRO_0) sends macOS screenshot region chord: ⌘+⌃+⇧+4. The string macro "helloworldManwillspacewalk1969" is on layer 4 (M_STR1).
+Mouse keys: MB1/MB2 = mouse buttons; WhlU/D/L/R = scroll; arrows and media/brightness are on the right half of layer 2.
+Unicode mode is set to macOS, and all the emoji/math/logic keys output the shown symbols.
