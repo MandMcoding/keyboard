@@ -1,3 +1,28 @@
+HOW TO INSTALL
+
+Take the beekeeb_piantor_new_numpad.uf2 file
+Hold BOOTSEL or whatever to reset the board
+and while holding Plug your keyboard in.
+See the new drive that pops up
+Drag and drop the .ufs file in there
+
+HOW TO UPDATE KEYMAP (on macos):
+Change the files (keymap.c, config.h, rules.mk)
+If you don't have qmk installed
+
+brew install qmk/qmk/qmk
+qmk setup
+
+then go to the piantor folder in qmk, normally 
+~/qmk_firmware/keyboards/beekeeb/piantor/keymaps/
+add a new folder for your new layout
+compile new layout to get .uf2 file
+qmk compile -kb beekeeb/piantor -km $KEYMAP
+
+plug that girl in and do the install process again
+
+
+
 Use a unicode hex input layout in your mac software. I'm not sure about the rest
 
 Base Layer (0) – QWERTY
@@ -5,7 +30,7 @@ Base Layer (0) – QWERTY
 ┌────┬───┬───┬───┬───┬───┐   ┌───┬───┬───┬───┬───┬────┐
 │Tab │ Q │ W │ E │ R │ T │   │ Y │ U │ I │ O │ P │Esc │
 ├────┼───┼───┼───┼───┼───┤   ├───┼───┼───┼───┼────┼────┤
-│Shift│ A │ S │ D │ F │ G │   │ H │ J │ K │ L │ ;  │ '  │
+│Shft│ A │ S │ D │ F │ G │   │ H │ J │ K │ L │ ;  │ '  │
 ├────┼───┼───┼───┼───┼───┤   ├───┼───┼───┼───┼────┼────┤
 │Ctrl│ Z │ X │ C │ V │ B │   │ N │ M │ , │ . │ /  │Ent │
 └────┴───┴───┴───┴───┴───┘   └───┴───┴───┴───┴────┴────┘
@@ -16,14 +41,14 @@ Base Layer (0) – QWERTY
 Symbols / Numpad / Arrows (1)
 
 ┌────┬────┬────┬────┬────┬────┐   ┌────┬────┬────┬────┬────┬────┐
-│ !  │ @  │ #  │ $  │ %  │ ^  │   │ KP7│ KP8│ KP9│ -  │ *  │ /  │
+│ !  │ @  │ #  │ $  │ %  │ ^  │   │ 7  │ 8  │ 9  │ -  │ *  │ /  │
 ├────┼────┼────┼────┼────┼────┤   ├────┼────┼────┼────┼────┼────┤
-│ •  │ `  │ &  │ \  │ {  │ }  │   │ KP4│ KP5│ KP6│ +  │ ↑  │ =  │
+│ •  │ `  │ &  │ \  │ {  │ }  │   │ 4  │ 5  │ 6  │ +  │ ↑  │ =  │
 ├────┼────┼────┼────┼────┼────┤   ├────┼────┼────┼────┼────┼────┤
-│TT2 │TT3 │ [  │ ]  │ (  │ )  │   │ KP1│ KP2│ KP3│ ←  │ ↓  │ →  │
+│TT2 │TT3 │ [  │ ]  │ (  │ )  │   │ 1  │ 2  │ 3  │ ←  │ ↓  │ →  │
 └────┴────┴────┴────┴────┴────┘   └────┴────┴────┴────┴────┴────┘
            ┌────┬────┬────┐        ┌────┬────┬────┐
-           │ •  │ _  │ •  │        │ ;  │ KP0│ .  │
+           │ •  │ _  │ •  │        │ ;  │ 0│ .  │
            └────┴────┴────┘        └────┴────┴────┘
 
 Gigachad – Mouse, System, Emojis (2)
