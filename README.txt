@@ -6,7 +6,9 @@ and while holding Plug your keyboard in.
 See the new drive that pops up
 Drag and drop the .ufs file in there
 
+
 HOW TO UPDATE KEYMAP (on macos):
+
 Change the files (keymap.c, config.h, rules.mk)
 If you don't have qmk installed
 
@@ -21,7 +23,7 @@ qmk compile -kb beekeeb/piantor -km $KEYMAP
 
 plug that girl in and do the install process again
 
-
+---
 
 Use a unicode hex input layout in your mac software. I'm not sure about the rest
 
